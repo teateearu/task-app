@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import initialData from './initial-data';
 
 const Container = styled.div`
   position: absolute;
