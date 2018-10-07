@@ -1,13 +1,13 @@
 const initialData = {
   tasks: {
-    'task-1': { id: 'task-1', content: 'Item title' },
-    'task-2': { id: 'task-2', content: 'Item title' },
-    'task-3': { id: 'task-3', content: 'Item title' },
-    'task-4': { id: 'task-4', content: 'Item title' },
-    'task-5': { id: 'task-5', content: 'Item title' },
-    'task-6': { id: 'task-6', content: 'Item title' },
-    'task-7': { id: 'task-7', content: 'Item title' },
-    'task-8': { id: 'task-8', content: 'Item title' },
+    'task-1': { id: 'task-1', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
+    'task-2': { id: 'task-2', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
+    'task-3': { id: 'task-3', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
+    'task-4': { id: 'task-4', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
+    'task-5': { id: 'task-5', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
+    'task-6': { id: 'task-6', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
+    'task-7': { id: 'task-7', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
+    'task-8': { id: 'task-8', title: 'Item title', content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget' },
   },
   columns: {
     'column-1': {
