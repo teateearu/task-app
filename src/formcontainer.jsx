@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   position: absolute;
-  bottom: 50px;
-  left: 50px;
+  bottom: 30px;
+  left: 30px;
   z-index: 1;
   background-color: white;
   width: 220px;
@@ -34,13 +34,14 @@ const Input = styled.input`
     font-style: italic;
   }
 `;
-const BigInput = styled.textarea`
+const Textarea = styled.textarea`
   padding: 8px;
   margin-left: 16px;
   border: 1px solid lightgrey;
   border-radius: 4px;
   width: 170px;
   background-color: #FAFAFA;
+  resize: none;
   &::placeholder {
     color: lightgrey;
     font-style: italic;
@@ -52,13 +53,14 @@ const Button = styled.button`
   background-color: #00af81;
   margin: 16px;
   border-radius: 4px;
+  border: none;
 `;
 
 export default class FormContainer extends React.Component {
 
   createNew = () => {
     // Eventually would add a new Task
-    alert('Submitted');
+    alert('Added new project');
   }
   render() {
     return (
@@ -66,7 +68,7 @@ export default class FormContainer extends React.Component {
         <Title>New project</Title>
         <Form onSubmit={this.createNew}>
           <Input placeholder="Project title" />
-          <BigInput rows="7" placeholder="Project description" />
+          <Textarea rows="7" placeholder="Project description" />
           <Button>Add project +</Button>
         </Form>
       </Container>

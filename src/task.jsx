@@ -41,23 +41,21 @@ export default class Task extends React.Component {
     return (
       <div>
         { showing ?
-          <div>
-            <Draggable draggableId={this.props.task.id} index={this.props.index}>
-            {(provided, snapshot) => (
-              <Container
-                {...provided.draggableProps}
-                {...provided.dragHandleProps}
-                innerRef={provided.innerRef}
-                isDragging={snapshot.isDragging}
-              >
-                <Title>{this.props.task.title}
-                  <Button onClick={() => this.setState({ showing: !showing })}>x</Button>
-                </Title>
-                <Content>{this.props.task.content}</Content>
-              </Container>
-            )}
-            </Draggable>
-          </div>
+          <Draggable draggableId={this.props.task.id} index={this.props.index}>
+          {(provided, snapshot) => (
+            <Container
+              {...provided.draggableProps}
+              {...provided.dragHandleProps}
+              innerRef={provided.innerRef}
+              isDragging={snapshot.isDragging}
+            >
+              <Title>{this.props.task.title}
+                <Button onClick={() => this.setState({ showing: !showing })}>x</Button>
+              </Title>
+              <Content>{this.props.task.content}</Content>
+            </Container>
+          )}
+          </Draggable>
           : null
         }
       </div>
