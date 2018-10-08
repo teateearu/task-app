@@ -24,7 +24,6 @@ const Title = styled.h3`
   text-align: center;
   margin: 4px 0 2px 0;
   box-shadow: 0 4px 2px -2px #dadada;
-  z-index: 1;
 `;
 const TaskList = styled.div`
   color: #7E7E7E;
